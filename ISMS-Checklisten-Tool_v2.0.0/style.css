@@ -1,0 +1,175 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #005a9c; /* BSI Blau */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1300px; /* Etwas breiter für mehr Spalteninhalt */
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.controls {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap; /* Damit Buttons umbrechen, falls nicht genug Platz */
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+button, input[type="file"] {
+    padding: 8px 12px;
+    border: 1px solid #005a9c;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+#checklist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#checklist-table th,
+#checklist-table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#checklist-table th {
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #005a9c;
+}
+
+#checklist-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#checklist-table select,
+#checklist-table input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+#checklist-table textarea {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.95em;
+    resize: vertical;
+}
+
+.step-text-container {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.bsi-reference-input {
+    min-height: 80px;
+    border: 1px dashed #007bff;
+    background-color: #f0f8ff;
+    color: #334;
+    margin-top: 5px;
+}
+
+.notes-input {
+    min-height: 60px;
+    background-color: #fff;
+}
+
+.doc-paths-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.doc-path-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.doc-path-item input[type="text"] {
+    flex-grow: 1;
+    width: auto;
+    margin-bottom: 0;
+}
+
+.add-path-btn, .remove-path-btn {
+    padding: 4px 8px;
+    font-size: 0.9em;
+    min-width: 30px;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.add-path-btn {
+    background-color: #28a745;
+    border-color: #28a745;
+    align-self: flex-start;
+    margin-top: 5px;
+}
+.add-path-btn:hover {
+    background-color: #218838;
+}
+
+.remove-path-btn {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.remove-path-btn:hover {
+    background-color: #c82333;
+}
+
+.status-offen { /* Optional: Hintergrundfarbe für Zeilen mit Status "Offen" */ }
+.status-in-bearbeitung { /* Optional: Hintergrundfarbe für Zeilen mit Status "In Bearbeitung" */ }
+.status-erledigt { /* Optional: Hintergrundfarbe für Zeilen mit Status "Erledigt" */ }

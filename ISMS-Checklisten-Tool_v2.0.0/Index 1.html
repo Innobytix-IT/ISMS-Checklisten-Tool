@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einfaches ISMS Checklist Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ISMS Schritt-Checkliste</h1>
+    </header>
+    <main>
+        <div class="controls">
+            <button id="export-data">Daten Exportieren (JSON)</button>
+            <label for="import-file">Daten Importieren (JSON):</label>
+            <input type="file" id="import-file" accept=".json">
+            <button id="download-pdf">BSI 200-2 PDF herunterladen</button>
+        </div>
+        <table id="checklist-table">
+            <thead>
+                <tr>
+                    <th>Kapitel</th>
+                    <th>Schritt / BSI Referenz</th>
+                    <th>Status</th>
+                    <th>Dokumente/Pfade</th>
+                    <th>Notizen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Schritte werden hier per JavaScript eingefügt -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
